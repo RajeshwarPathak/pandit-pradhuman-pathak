@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #120706;
+    --bg-surface: #1d0b08;
+    --gold: #f5b942;
+    --saffron: #ff7a1a;
+    --vermilion: #b3261e;
+    --text-primary: #f6e9d5;
+    --text-muted: #c9b196;
+    --border-line: rgba(255, 170, 60, 0.22);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Mukta', 'Tiro Devanagari Hindi', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    overflow-x: hidden;
+  }
+}
+
+.font-devanagari {
+  font-family: 'Tiro Devanagari Hindi', 'Mukta', serif;
+}
+
+.font-body {
+  font-family: 'Mukta', system-ui, -apple-system, sans-serif;
+}
+
+.font-sans-ui {
+  font-family: 'Mukta', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #120706;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(245, 185, 66, 0.25);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 185, 66, 0.45);
+}
